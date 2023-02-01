@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" type="text/css" href="./css/estilos.css">
+    <script src="https://kit.fontawesome.com/e74ed8ddff.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://bootswatch.com/5/yeti/bootstrap.css" /> <!-- menu-->
+</head>
+
+<body>
+    <div class="menu-principal">
+        <nav class="navbar navbar-expand-lg bg-primary data-bs-theme=" dark>
+            <div class="container-fluid">
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                        <a class="nav-link" href="cartaDePresentacion.html">Presentacion</a>
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <!--encabesado-->
+
+    <!--FORMULARIO DE CONTACTO-->
+    <div class="fondo-formulario">
+
+        <form class="formulario" id="form" action="" method="post" enctype="text/plain">
+            <h2 class="formulario__titulo">Contáctame</h2>
+            <ul class="formulario-menu li">
+                <li>
+                    <label for="name">Nombre:</label>
+                    <br>
+                    <input class="form_input" type="text" id="name" name="name" required>
+                </li>
+                <li>
+                    <label for="mail">Correo electrónico:</label>
+                    <br>
+                    <input class="form_input" type="email" id="email" name="email" required>
+                </li>
+                <li>
+                    <label for="msg">Mensaje:</label>
+                    <br>
+                    <textarea class="formulario__comentario" id="message" name="message" required></textarea>
+                </li>
+                <li>
+                    <button type="submit" id="button" class="formulario__submit" value="Enviar">Enviar</button>
+                </li>
+            </ul>
+
+        </form>
+
+    </div>
+
+</body>
+<script src="./js/formulario.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+<script type="text/javascript">
+    emailjs.init('ncicjgPlvD8Xbj4Ka')
+</script>
+
+</html>
